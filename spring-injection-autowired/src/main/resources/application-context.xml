@@ -8,10 +8,8 @@
   <context:component-scan base-package="com.sinangoo" />
   <!-- <context:annotation&#45;config/> -->
 
-  <bean id="Output" class="com.sinangoo.Output">
-  </bean>
-  <bean id="App" class="com.sinangoo.App">
-  </bean>
+  <bean id="Output" class="com.sinangoo.Output"/>
+  <bean id="App" class="com.sinangoo.App"/>
 
 </beans> 
 
