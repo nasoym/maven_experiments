@@ -5,10 +5,9 @@
   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> 
 
   <context:component-scan base-package="com.sinangoo" />
-  <!-- <context:annotation&#45;config/> -->
 
-  <bean id="Output" class="com.sinangoo.Output"/>
-  <bean id="App" class="com.sinangoo.App"/>
+  <!-- <bean id="output" class="com.sinangoo.Output"/> -->
+  <!-- <bean id="app" class="com.sinangoo.App"/> -->
 
 </beans> 
 

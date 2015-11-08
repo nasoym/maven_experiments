@@ -4,22 +4,18 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class App 
 {
 
-  Output output;
-
   @Autowired
-  public void setOutput(Output output) {
-    this.output = output;
-  }
+  Output output;
 
   public static void main( String[] args ) {
     ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"application-context.xml"});
-    App app = (App)context.getBean("App");
+    App app = (App)context.getBean("app");
     app.saySomething();
   }
 

@@ -15,7 +15,7 @@ public class App
 
   public static void main( String[] args ) {
     ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"application-context.xml"});
-    App app = (App)context.getBean("App");
+    App app = (App)context.getBean("app");
     app.saySomething();
   }
 
